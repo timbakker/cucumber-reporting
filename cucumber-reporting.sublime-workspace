@@ -1,0 +1,582 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"buildnu",
+				"buildNum"
+			],
+			[
+				"touch",
+				"touch_successes"
+			],
+			[
+				"X_DSym",
+				"X_DSYM_NAME"
+			],
+			[
+				"X_Ds",
+				"X_DSYM_NAME"
+			],
+			[
+				"XBuil",
+				"X_BUILD_DIR"
+			],
+			[
+				"avat",
+				"avatarid"
+			],
+			[
+				"bundle",
+				"bundle_identifier"
+			],
+			[
+				"CFBundle",
+				"CFBundleIdentifier"
+			],
+			[
+				"sc",
+				"scheme"
+			],
+			[
+				"biu",
+				"buildDir"
+			],
+			[
+				"scr",
+				"scrollView"
+			],
+			[
+				"list",
+				"listView"
+			],
+			[
+				"userpr",
+				"userProfileFilledIn"
+			],
+			[
+				"button",
+				"buttonNaam"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main/java/net/masterthought/cucumber/ReportBuilder.java",
+			"settings":
+			{
+				"buffer_size": 14848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/test/java/net/masterthought/cucumber/ReportBuilderTest.java",
+			"settings":
+			{
+				"buffer_size": 9437,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"selected_items":
+		[
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indnet",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"idn",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"setsytagher",
+				"Set Syntax: Gherkin"
+			],
+			[
+				"setsyntagher",
+				"Set Syntax: Gherkin"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"setsynjavasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reidin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"setsyntaxruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"setsyntar",
+				"Set Syntax: Ruby"
+			],
+			[
+				"setsyntruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"setsyntaruby",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"setsynlua",
+				"Set Syntax: Lua"
+			],
+			[
+				"setsynct",
+				"Set Syntax: C#"
+			],
+			[
+				"setsyjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"setjson",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/tim/Development/cucumber-reporting/src/main/java/net/masterthought/cucumber/util/Util.java",
+		"/Users/tim/Development/cucumber-reporting/src/main/java/net/masterthought/cucumber/ReportBuilder.java",
+		"/Users/tim/Development/cucumber-reporting/src/main/resources/templates/screenshotPage.vm",
+		"/Users/tim/Development/cucumber-reporting/target/classes/templates/featureOverview.vm",
+		"/Users/tim/Development/cucumber-reporting/src/test/java/net/masterthought/cucumber/ReportBuilderTest.java",
+		"/Users/tim/Development/cucumber-reporting/src/main/resources/templates/tagOverview.vm",
+		"/Users/tim/Development/cucumber-reporting/target/classes/templates/tagReport.vm",
+		"/Users/tim/Development/cucumber-reporting/target/classes/templates/featureReport.vm",
+		"/Users/tim/Development/cucumber-reporting/src/main/resources/templates/featureReport.vm",
+		"/Users/tim/Development/cucumber-reporting/src/main/resources/templates/featureOverview.vm",
+		"/Users/tim/Development/cucumber-reporting/target/test-classes/net/masterthought/cucumber/super.html",
+		"/Users/tim/Development/cucumber-reporting/src/main/java/net/masterthought/cucumber/TagObject.java",
+		"/Users/tim/Development/cucumber-reporting/src/main/resources/templates/errorPage.vm",
+		"/Users/tim/Development/cucumber-reporting/src/test/java/net/masterthought/cucumber/ReportInformationTest.java",
+		"/Users/tim/Development/cucumber-reporting/src/main/java/net/masterthought/cucumber/ReportParser.java",
+		"/Users/tim/Development/cucumber-reporting/src/test/java/net/masterthought/cucumber/StatusesTest.java",
+		"/Users/tim/Development/cucumber-reporting/src/main/java/net/masterthought/cucumber/json/Feature.java",
+		"/Users/tim/Development/cucumber-reporting/src/test/java/net/masterthought/cucumber/DocStringTest.java",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/buildscript/Rakefile",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/support/env.rb",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/roaming_postpaid.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/step_definitions/core_steps.rb",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/step_definitions/launch_steps.rb",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/support/recording.rb",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/user_delete.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/user_logout.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/roaming_prepaid.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/user_change_password.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/flex_migratetoprepaid.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/user_add.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/step_definitions/user_steps.rb",
+		"/Users/tim/Library/Caches/Cornerstone/Store/https%3A%2F%2Ft.bakker%40svn.triple-it.nl%2Fsvn%2Fvodafone/0000006199/mobile_channel/backend/branches/mcare_2.0/_application/api/v2/ApiV2SectionUsage.class.php",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/My Vodafone/Resources/Images.xcassets/Shared/ScrollView/shadow_bottom.imageset/Contents.json",
+		"/Users/tim/Development/Vodafone/mobile_channel/cucumber/user_delete.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/cucumber/user_change_password.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/cucumber/roaming_dashboard.feature",
+		"/Users/tim/Library/Caches/Cornerstone/Store/https%3A%2F%2Ft.bakker%40svn.triple-it.nl%2Fsvn%2Fvodafone/0000005669/mobile_channel/backend/branches/mcare_2.0/_application/api/v2/popo/ApiV2GuiTableColumn.class.php",
+		"/Users/tim/Library/Caches/Cornerstone/Store/https%3A%2F%2Ft.bakker%40svn.triple-it.nl%2Fsvn%2Fvodafone/0000005669/mobile_channel/backend/branches/mcare_2.0/_application/api/v2/popo/ApiV2GuiTable.class.php",
+		"/Users/tim/Library/Caches/Cornerstone/Store/https%3A%2F%2Ft.bakker%40svn.triple-it.nl%2Fsvn%2Fvodafone/0000005706/mobile_channel/backend/branches/mcare_2.0/_application/api/v2/ApiV2SectionPrepaid.class.php",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/buildscript/go.sh",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Provisioning/inhousemtf.mobileprovision",
+		"/Users/tim/Desktop/newWorldStructure.js",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/step_definitions/screenshot_steps.rb",
+		"/Users/tim/.cocoapods/repos/TripleIT/TappsCrashKit/1.0.1/TappsCrashKit.podspec",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+		"/Users/tim/Development/Vodafone/mobile_channel/cucumber/checkoutTest",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/My Vodafone/Classes/Screens/Roaming/VMCRoamingViewController.m",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/step_definitions/ignored_steps.rb",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/user_login.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/add_user.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/Frank/features/step_definitions/xcodebuild -xcconfig Frank:frank.xcconfig clean bu3",
+		"/Users/tim/Library/Application Support/Tunnelblick/Configurations before conversion 2013-05-13 09.37.36/vpn.triple-it.nl.ovpn",
+		"/Users/tim/Desktop/FrankTest/Frank/features/my_first.feature",
+		"/Users/tim/Development/Vodafone/mobile_channel/android/VodafoneProject/trunk/calabashtest/local.properties",
+		"/Users/tim/Development/Vodafone/mobile_channel/android/VodafoneProject/trunk/calabashtest/features/my_first.feature",
+		"/Users/tim/Desktop/FrankTest/FrankTest.xcodeproj/project.pbxproj",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#11/mtf8.php",
+		"/Users/tim/Desktop/index.html",
+		"/Users/tim/Library/Caches/TemporaryItems/index.html",
+		"/Users/tim/Desktop/Frank/gem/frank-skeleton/frankify.xcconfig.tt",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/My Vodafone.xcodeproj/project.pbxproj",
+		"/Users/tim/Desktop/Ad Info",
+		"/Users/tim/Downloads/b7a65fc0-9fd9-4cc5-b500-4b242b0fc274-audio_eng=126000-video_eng=1500000.m3u8",
+		"/Users/tim/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/Charles.app/Contents/Info.plist",
+		"/Users/tim/Development/Vodafone/mobile_channel/ios/trunk/buildscript/Brewfile",
+		"/Users/tim/Development/MarcoBorsato/iphone/trunk/MBorsato/MBorsato/Classes/Network/TFValueTransformer.h",
+		"/Users/tim/Development/CBA/cba medlden m2active/trunk/SchadeMelden-shared/m2active.properties",
+		"/Users/tim/Development/Vodafone/mc_ios/branches/newdawn_1/Frank/features/step_definitions/screenshot_steps.rb",
+		"/Users/tim/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/Users/tim/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/tim/Development/Vodafone/mc_ios/branches/newdawn_1/Frank/features/my_first.feature",
+		"/Users/tim/Development/Vodafone/mc_ios/branches/newdawn_1/My Vodafone.xcworkspace/xcuserdata/tim.xcuserdatad/WorkspaceSettings.xcsettings",
+		"/Users/tim/Development/Vodafone/mc_ios/branches/newdawn_1/My Vodafone.xcworkspace/xcshareddata/My Vodafone.xccheckout",
+		"/Users/tim/Desktop/WMT Live/WMT Live.xcodeproj/project.pbxproj",
+		"/Users/tim/Development/Vodafone/mc_ios/branches/newdawn_1/My Vodafone.xcodeproj/project.pbxproj",
+		"/Users/tim/Desktop/BadSalt TODO",
+		"/Users/tim/Development/Vodafone/mc_ios/branches/newdawn_1/Podfile",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#2/databaseConnect.php",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#1/pollMain.php",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#0/download.php",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#25/index.php",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#24/download.php",
+		"/Users/tim/Development/CBA/cba medlden m2active/trunk/SchadeMelden-shared/scripts/Loader.lua",
+		"/Users/tim/Development/CBA/cba medlden m2active/trunk/SchadeMelden-shared/config/Config.production",
+		"/Users/tim/Development/CBA/cba medlden m2active/trunk/SchadeMelden-shared/scripts/Locale.lua",
+		"/Users/tim/Development/CBA/cba medlden m2active/trunk/SchadeMelden-shared/scripts/NoodnummersToevoegen.lua",
+		"/Users/tim/Development/CBA/cba medlden m2active/trunk/SchadeMelden-shared/scripts/NoodnummersVerwijderen.lua",
+		"/Users/tim/Development/CBA/cba medlden m2active/trunk/SchadeMelden-shared/scripts/NieuweSchadeMelden.lua",
+		"/Users/tim/Library/Caches/TemporaryItems/HorizontalScrollView.m",
+		"/Users/tim/Downloads/index.php",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#0/index.php",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#2/index.php",
+		"/Users/tim/Documents/mobilestreamer/2013-08-07 10:28:53.183 WMT Live[591:60b] framerat",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#1/config.php",
+		"/Users/tim/Library/Caches/com.binarynights.ForkLift2/#0/ApiV1SectionAchmea.class.php",
+		"/Users/tim/Development/Vodafone/mc_ios/branches/mtf_7/Vodafone App.xcodeproj/project.pbxproj"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fullPathToPNGFiles",
+			"findPNGFiles",
+			"println",
+			"log",
+			"tag-overview",
+			"tag_overview",
+			"copyResource",
+			"reportDirectory",
+			"targetBuildDirectory",
+			"getRawStatus",
+			"getTagName",
+			"fullPathToJsonFiles",
+			"jsonFiles",
+			"generateErrorPage",
+			"assertStatsHeader",
+			"feature-overview",
+			"Util.Status.PENDING",
+			"runner.java",
+			"Account_has_sufficient_funds_againthe_account_balance_is_300",
+			"account_balance.txt",
+			"artifactConfiguration",
+			"artifacts",
+			"artifactConfig",
+			"generateFeatureOverview",
+			"copyResource",
+			"codemirror.zip",
+			"artifactsEnabled",
+			"quote",
+			"should see \"300 min/sms\"\nThen I should see \"€ 12,99\"\nThen I should see \"500 MB\"\nThen I should see \"€ 12,99\"\n#Total\nThen I should see \"€ 25,98 per maand\"\n\n#Change\nThen I touch the \"Verander Hybride pakket\" text\nThen I touch the \"150 min/sms\" text\nThen I touch the \"200 MB\" text\nThen I touch the \"Gereed\" text\n\n#Check if selected data is visible\nThen I should see \"150 min/sms\"\nThen I should see \"€ 8,49\"\nThen I should see \"200 MB\"\nThen I should see \"€ 9,99\"\n#Total\nThen I should",
+			" I should see \"300 min/sms\"\nThen I should see \"€ 12,99\"\nThen I should see \"500 MB\"\nThen I should see \"€ 12,99\"\n#Total\nThen I should see \"€ 25,98 per maand\"\n\n#Change\nThen I touch the \"Verander Hybride pakket\" text\nThen I touch the \"150 min/sms\" text\nThen I touch the \"200 MB\" text\nThen I touch the \"Gereed\" text\n\n#Check if selected data is visible\nThen I should see \"150 min/sms\"\nThen I should see \"€ 8,49\"\nThen I should see \"200 MB\"\nThen I should see \"€ 9,99\"\n#Total\nThen I should see \"€ 18,48 per maand\"\n",
+			"createOutOfBundleUsageGuiElement",
+			"getbundlepassword",
+			"Vereiste waarde password mist",
+			"getuserbundles",
+			"checkbundlepassword",
+			"getbundlepassword",
+			"colorinfo",
+			"roaming",
+			"openvestausecase",
+			"PLIST_INFO_LOCATION",
+			"sim_launcher",
+			"naar",
+			"aanpassen",
+			"je gaat",
+			"vodafonerg",
+			"vodafone rg",
+			"progressCircle",
+			"=",
+			":",
+			"usage",
+			"alert",
+			"bundle_identifier",
+			"release_type",
+			"xcode",
+			"qa_release_type",
+			"copy",
+			"Duration",
+			"set_build_version",
+			"CFBundleVersion",
+			"CFBundleIdentifier",
+			"set_build_version",
+			"CFBundleIdentifier",
+			"Param1",
+			"param1",
+			"dsym",
+			"build_dir",
+			"APP_BUNDLE_PATH",
+			"frank_cucumber",
+			"frank_build",
+			"ci",
+			"USE_SIM_LAUNCHER_SERVER",
+			"frank_build",
+			"frank_test",
+			"APP_BUNDLE_PATH",
+			"cleanbuild",
+			"arg1",
+			"avfoundation",
+			"preproces",
+			"Phone",
+			"scrolltotop",
+			"hideWarning",
+			"warningView",
+			"updateWarningLabel",
+			"callPhoneNumber",
+			"Configuration loglevel",
+			"log",
+			"tonumber",
+			"noodnummer_toevoegen_telefoonnummer_error",
+			"vul een",
+			"vul eeen",
+			"CoverURL",
+			"begin",
+			"Vendor/Liv",
+			"liveper",
+			"Frameworks/Quincykit",
+			"rtl_site"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			":",
+			"="
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main/java/net/masterthought/cucumber/ReportBuilder.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14223,
+								14223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4552.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/test/java/net/masterthought/cucumber/ReportBuilderTest.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								472,
+								472
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "cucumber-reporting.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 292.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

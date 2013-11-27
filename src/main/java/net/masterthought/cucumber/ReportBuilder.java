@@ -9,7 +9,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
-
+import org.apache.tools.ant.DirectoryScanner;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
@@ -28,7 +28,7 @@ public class ReportBuilder {
     private boolean highCharts;
     private boolean parsingError;
 
-    private final String VERSION = "cucumber-reporting-0.0.22";
+    private final String VERSION = "cucumber-reporting-0.0.24 customized by Tim Bakker";
 
     public ReportBuilder(List<String> jsonReports, File reportDirectory, String pluginUrlPath, String buildNumber, String buildProject, boolean skippedFails, boolean undefinedFails, boolean flashCharts, boolean runWithJenkins, boolean artifactsEnabled, String artifactConfig, boolean highCharts) throws Exception {
 
@@ -79,6 +79,7 @@ public class ReportBuilder {
             generateFeatureReports();
             generateTagReports();
             generateTagOverview();
+            generateScreenshotPage();
         } catch (Exception exception) {
             if (!parsingError) {
                 generateErrorPage(exception);
@@ -86,6 +87,27 @@ public class ReportBuilder {
             }
         }
     }
+
+    public void generateScreenshotPage() throws Exception {
+        String[] pngFiles = findPNGFiles(reportDirectory);
+        List<String> imagePaths = fullPathToPNGFiles(pngFiles, reportDirectory);
+
+        System.out.println("[INFO BUILDER] IMAGEPATHS: " + imagePaths);
+
+        VelocityEngine ve = new VelocityEngine();
+        ve.init(getProperties());
+        Template errorPage = ve.getTemplate("templates/screenshotPage.vm");
+        VelocityContext context = new VelocityContext();
+        context.put("version", VERSION);
+        context.put("build_number", buildNumber);
+        context.put("fromJenkins", runWithJenkins);
+        context.put("jenkins_base", pluginUrlPath);
+        context.put("build_project", buildProject);
+        context.put("image_paths", imagePaths);
+        context.put("time_stamp", new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date()));
+        generateReport("screenshot-overview.html", errorPage, context);
+    }
+
 
     public void generateFeatureReports() throws Exception {
         Iterator it = ri.getProjectFeatureMap().entrySet().iterator();
@@ -265,4 +287,32 @@ public class ReportBuilder {
     }
 
 
+
+    private String[] findPNGFiles(File targetDirectory) {
+        DirectoryScanner scanner = new DirectoryScanner();
+        scanner.setIncludes(new String[]{"**/*.png"});
+        scanner.setBasedir(targetDirectory);
+        scanner.scan();
+        return scanner.getIncludedFiles();
+    }
+
+    private List<String> fullPathToPNGFiles(String[] imageFiles, File targetBuildDirectory) {
+        List<String> fullPathList = new ArrayList<String>();
+        for (String file : imageFiles) {
+
+            if (file.contains("screen")) {
+                String absolutePath = new File(targetBuildDirectory, file).getAbsolutePath();
+                 //Fix Jobs path
+                absolutePath = absolutePath.replace("var/lib/jenkins/jobs", "jenkins/job");
+                //Replace date with build number
+                absolutePath = absolutePath.replaceFirst("builds/[\\d\\-_]+/", this.buildNumber);
+
+                absolutePath = absolutePath.replace("cucumber-html-reports", "/cucumber-html-reports");
+
+                fullPathList.add(absolutePath);
+            }
+
+        }
+        return fullPathList;
+    }
 }

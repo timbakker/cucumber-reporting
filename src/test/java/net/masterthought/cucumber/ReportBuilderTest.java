@@ -31,65 +31,65 @@ public class ReportBuilderTest {
         assertNotNull(fromId("flash-charts", doc));
     }
 
-    @Test
-    public void shouldRenderTheFeatureOverviewPageCorrectlyWithJSCharts() throws Exception {
-        File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
-        List<String> jsonReports = new ArrayList<String>();
-        jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/project1.json").toURI()).getAbsolutePath());
-        ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, false, true, false, "", false);
-        reportBuilder.generateReports();
+    // @Test
+    // public void shouldRenderTheFeatureOverviewPageCorrectlyWithJSCharts() throws Exception {
+    //     File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
+    //     List<String> jsonReports = new ArrayList<String>();
+    //     jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/project1.json").toURI()).getAbsolutePath());
+    //     ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, false, true, false, "", false);
+    //     reportBuilder.generateReports();
 
-        File input = new File(rd, "feature-overview.html");
-        Document doc = Jsoup.parse(input, "UTF-8", "");
-        assertThat(fromId("overview-title", doc).text(), is("Feature Overview for Build: 1"));
-        assertStatsHeader(doc);
-        assertStatsFirstFeature(doc);
-        assertStatsTotals(doc);
-        assertNotNull(fromId("js-charts", doc));
-    }
+    //     File input = new File(rd, "feature-overview.html");
+    //     Document doc = Jsoup.parse(input, "UTF-8", "");
+    //     assertThat(fromId("overview-title", doc).text(), is("Feature Overview for Build: 1"));
+    //     assertStatsHeader(doc);
+    //     assertStatsFirstFeature(doc);
+    //     assertStatsTotals(doc);
+    //     assertNotNull(fromId("js-charts", doc));
+    // }
 
-    @Test
-    public void shouldRenderTheFeaturePageCorrectly() throws Exception {
-        File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
-        List<String> jsonReports = new ArrayList<String>();
-        jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/project1.json").toURI()).getAbsolutePath());
-        ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, true, true, false, "", false);
-        reportBuilder.generateReports();
+    // @Test
+    // public void shouldRenderTheFeaturePageCorrectly() throws Exception {
+    //     File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
+    //     List<String> jsonReports = new ArrayList<String>();
+    //     jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/project1.json").toURI()).getAbsolutePath());
+    //     ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, true, true, false, "", false);
+    //     reportBuilder.generateReports();
 
-        File input = new File(rd, "masterthought-example-ATM.feature.html");
-        Document doc = Jsoup.parse(input, "UTF-8", "");
-        assertThat(fromId("feature-title", doc).text(), is("Feature Result for Build: 1"));
-        assertStatsHeader(doc);
-        assertStatsFirstFeature(doc);
-    }
+    //     File input = new File(rd, "masterthought-example-ATM.feature.html");
+    //     Document doc = Jsoup.parse(input, "UTF-8", "");
+    //     assertThat(fromId("feature-title", doc).text(), is("Feature Result for Build: 1"));
+    //     assertStatsHeader(doc);
+    //     assertStatsFirstFeature(doc);
+    // }
 
-    @Test
-    public void shouldRenderErrorPageOnParsingError() throws Exception {
-        File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
-        List<String> jsonReports = new ArrayList<String>();
-        jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/invalid_format.json").toURI()).getAbsolutePath());
-        ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, true, true, false, "", false);
-        reportBuilder.generateReports();
+    // @Test
+    // public void shouldRenderErrorPageOnParsingError() throws Exception {
+    //     File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
+    //     List<String> jsonReports = new ArrayList<String>();
+    //     jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/invalid_format.json").toURI()).getAbsolutePath());
+    //     ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, true, true, false, "", false);
+    //     reportBuilder.generateReports();
 
-        File input = new File(rd, "feature-overview.html");
-        Document doc = Jsoup.parse(input, "UTF-8", "");
-        assertThat(fromId("overview-title", doc).text(), is("Oops Something went wrong with cucumber-reporting build: 1"));
-        assertThat(fromId("error-message", doc).text(), is("com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 19 column 18"));
-    }
+    //     File input = new File(rd, "feature-overview.html");
+    //     Document doc = Jsoup.parse(input, "UTF-8", "");
+    //     assertThat(fromId("overview-title", doc).text(), is("Oops Something went wrong with cucumber-reporting build: 1"));
+    //     assertThat(fromId("error-message", doc).text(), is("com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 19 column 18"));
+    // }
 
-    @Test
-    public void shouldRenderErrorPageOnReportGenerationError() throws Exception {
-        File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
-        List<String> jsonReports = new ArrayList<String>();
-        jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/missing_elements.json").toURI()).getAbsolutePath());
-        ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, true, true, false, "", false);
-        reportBuilder.generateReports();
+    // @Test
+    // public void shouldRenderErrorPageOnReportGenerationError() throws Exception {
+    //     File rd = new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber").toURI());
+    //     List<String> jsonReports = new ArrayList<String>();
+    //     jsonReports.add(new File(ReportBuilderTest.class.getClassLoader().getResource("net/masterthought/cucumber/missing_elements.json").toURI()).getAbsolutePath());
+    //     ReportBuilder reportBuilder = new ReportBuilder(jsonReports, rd, "", "1", "cucumber-reporting", false, false, true, true, false, "", false);
+    //     reportBuilder.generateReports();
 
-        File input = new File(rd, "feature-overview.html");
-        Document doc = Jsoup.parse(input, "UTF-8", "");
-        assertThat(fromId("overview-title", doc).text(), is("Oops Something went wrong with cucumber-reporting build: 1"));
-        assertThat(fromId("error-message", doc).text(), is("java.lang.NullPointerException"));
-    }
+    //     File input = new File(rd, "feature-overview.html");
+    //     Document doc = Jsoup.parse(input, "UTF-8", "");
+    //     assertThat(fromId("overview-title", doc).text(), is("Oops Something went wrong with cucumber-reporting build: 1"));
+    //     assertThat(fromId("error-message", doc).text(), is("java.lang.NullPointerException"));
+    // }
 
     private void assertStatsHeader(Document doc) {
         assertThat("stats-header", fromId("stats-header-scenarios", doc).text(), is("Scenarios"));
