@@ -92,7 +92,10 @@ public class ReportBuilder {
         String[] pngFiles = findPNGFiles(reportDirectory);
         List<String> imagePaths = fullPathToPNGFiles(pngFiles, reportDirectory);
 
-        System.out.println("[INFO BUILDER] IMAGEPATHS: " + imagePaths);
+        //Group images
+        Map<String, List>  groupedImages = groupedPNGFiles(imagePaths);
+
+        System.out.println("[INFO BUILDER] Grouped imagepaths: " + groupedImages);
 
         VelocityEngine ve = new VelocityEngine();
         ve.init(getProperties());
@@ -104,6 +107,8 @@ public class ReportBuilder {
         context.put("jenkins_base", pluginUrlPath);
         context.put("build_project", buildProject);
         context.put("image_paths", imagePaths);
+        context.put("grouped_images", groupedImages);
+
         context.put("time_stamp", new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date()));
         generateReport("screenshot-overview.html", errorPage, context);
     }
@@ -314,5 +319,33 @@ public class ReportBuilder {
 
         }
         return fullPathList;
+    }
+
+    private Map<String, List>  groupedPNGFiles(List<String> pngFiles) {
+
+        Map<String, List> dictionary = new HashMap<String, List>();
+
+        for (String file : pngFiles) {
+            String scenarioName = scenarioNameForImagePath(file);
+
+            List<String> scenarioList = (List) dictionary.get(scenarioName);
+            if (scenarioList == null) {
+                scenarioList = new ArrayList<String>();
+            }
+            scenarioList.add(file);
+
+            dictionary.put(scenarioName, scenarioList);
+        }
+
+        return dictionary;
+    }
+
+    private String scenarioNameForImagePath(String completePath) {
+        String scenarioName = "";
+        String[] completeParts = completePath.split("screen");
+
+        String[] parts = completeParts[1].split("__");
+        scenarioName = parts[0];
+        return scenarioName;
     }
 }

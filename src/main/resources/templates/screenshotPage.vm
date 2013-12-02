@@ -46,23 +46,30 @@
 
 			<br/>
 
-			<div class="container_12">
-				#foreach($imagepath in $image_paths)
-				<div class="grid_2">
-					<a href="$imagepath">
-						<img src="$imagepath" width="100%" height="100%">
-					</a>
+			#foreach ($imagegroup in $grouped_images.entrySet()) 
+					<div class="grid_12">
+
+					<h2>$imagegroup.key</h2>
+
+					<div class="container_12">
+						#foreach($imagepath in $imagegroup.value)
+						<div class="grid_2">
+							<a href="$imagepath">
+								<img src="$imagepath" width="100%" height="100%">
+							</a>
+						</div>
+						#end
+					</div>
 				</div>
-				#end
-			</div>
+			#end
 
 
-			<div class="container_12">
-				<div class="grid_12 hr"></div>
-				<div class="grid_12 footer">
-					<p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: $version - $time_stamp</p>
-				</div>
-			</div>
-			<div class="clear"></div>
-		</body>
-		</html>
+	<div class="container_12">
+		<div class="grid_12 hr"></div>
+		<div class="grid_12 footer">
+			<p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: $version - $time_stamp</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+</body>
+</html>
